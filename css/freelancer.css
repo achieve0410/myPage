@@ -9402,7 +9402,10 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  /* color: #fff !important; */
+  color: #fff !important;
+}
+
+.text-black {
   color: #000 !important;
 }
 
