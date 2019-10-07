@@ -161,13 +161,13 @@ sup {
 
 a {
   color: #1abc9c;
-  /* color: #fdff00 */
+  /* color: #ffa6a6; */
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #117964;
+  color: #ffa6a6;
   /* color: #ffa6a6; */
   text-decoration: underline;
 }
@@ -400,8 +400,31 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+h7, .h7 {
+  font-size: 0.85rem;
+}
+
+custom {
+  font-size: 80%;
+}
+
+.custom {
+  font-size: 80%;
+  font-weight: bold;
+}
+
 .lead {
   font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.lead-2 {
+  font-size: 1.30rem;
+  font-weight: bold;
+}
+
+.lead-3 {
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -488,6 +511,11 @@ mark,
 
 .img-fluid {
   max-width: 100%;
+  height: auto;
+}
+
+.img-fluid-2 {
+  max-width: 50%;
   height: auto;
 }
 
@@ -600,6 +628,11 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.row-2 {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .no-gutters {
@@ -6242,16 +6275,23 @@ a.close.disabled {
 }
 
 .bg-primary {
-  /* background-color: #1abc9c !important; */
-  /* background-color: #eeb7bf !important; */
   background-color: #d5fde2 !important;
-  /* background-color: #f2f2bc !important; */
+}
+
+.bg-primary-2 {
+  background-color: #2c3e50 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #148f77 !important;
+}
+
+a.bg-primary-2:hover, a.bg-primary-2:focus,
+button.bg-primary-2:hover,
+button.bg-primary-2:focus {
+  background-color: #2c3e50 !important;
 }
 
 .bg-secondary {
@@ -6262,6 +6302,18 @@ button.bg-primary:focus {
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
+  background-color: #1a252f !important;
+}
+
+.bg-secondary-2 {
+  /* background-color: #2c3e50 !important; */
+  background-color: #ffffff !important;
+  opacity: 0.9
+}
+
+a.bg-secondary-2:hover, a.bg-secondary-2:focus,
+button.bg-secondary-2:hover,
+button.bg-secondary-2:focus {
   background-color: #1a252f !important;
 }
 
@@ -9410,7 +9462,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #1abc9c !important;
+  color: #000 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9487,7 +9539,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-white-50 {
-  color: rgba(255, 255, 255, 0.5) !important;
+  /* color: rgba(255, 255, 255, 0.5) !important; */
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .text-hide {
@@ -9624,7 +9677,34 @@ a.text-dark:hover, a.text-dark:focus {
 
 .divider-custom .divider-custom-line {
   width: 100%;
-  max-width: 7rem;
+  max-width: 18rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line-2 {
+  width: 100%;
+  max-width: 31rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line-3 {
+  width: 100%;
+  max-width: 24rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line-4 {
+  width: 100%;
+  max-width: 17rem;
   height: 0.25rem;
   background-color: #2c3e50;
   border-radius: 1rem;
@@ -9639,6 +9719,30 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 1rem;
 }
 
+.divider-custom .divider-custom-line-2:first-child {
+  margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line-2:last-child {
+  margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-line-3:first-child {
+  margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line-3:last-child {
+  margin-left: 1rem;
+}
+
+.divider-custom .divider-custom-line-4:first-child {
+  margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line-4:last-child {
+  margin-left: 1rem;
+}
+
 .divider-custom .divider-custom-icon {
   /* color: #2c3e50 !important; */
   color: #ff341d !important;
@@ -9647,7 +9751,22 @@ a.text-dark:hover, a.text-dark:focus {
 
 .divider-custom.divider-light .divider-custom-line {
   /* background-color: #fff; */
-  background-color: #2c3e50;
+  background-color: #ffa6a6;
+}
+
+.divider-custom.divider-light .divider-custom-line-2 {
+  /* background-color: #fff; */
+  background-color: #ffa6a6;
+}
+
+.divider-custom.divider-light .divider-custom-line-3 {
+  /* background-color: #fff; */
+  background-color: #ffa6a6;
+}
+
+.divider-custom.divider-light .divider-custom-line-4 {
+  /* background-color: #fff; */
+  background-color: #ffa6a6;
 }
 
 .divider-custom.divider-light .divider-custom-icon {
@@ -9657,6 +9776,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-xl {
   padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+}
+
+.btn-l {
+  padding: 0.7rem 1.225rem;
   font-size: 1.25rem;
 }
 
@@ -9685,6 +9809,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #mainNav {
+  box-shadow: 0px 2px 8px #415b75;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -9743,8 +9868,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    /* background: #1abc9c; */
-    background: #e59595;
+    background: #fff;
+    /* background: #e59595; */
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
